@@ -22,4 +22,9 @@ UPDATE employee_payroll Set gender ='M' where name = 'Mohan' ;
 UPDATE employee_payroll Set gender ='M' where name = 'Sarika' ;
 UPDATE employee_payroll Set gender ='M' where name = 'Rohan' ;
 
+select SUM(Salary) from employee_payroll where gender = 'M' Group by gender
+select AVG(Salary) from employee_payroll where gender = 'M' Group by gender
+select MIN(Salary) from employee_payroll where gender = 'M' Group by gender
+select MAX(Salary) from employee_payroll where gender = 'M' Group by gender
+select SUM(Salary) from employee_payroll where gender = 'M' Group by gender
 
