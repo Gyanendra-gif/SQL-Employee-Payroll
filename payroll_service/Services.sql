@@ -32,3 +32,5 @@ Alter table employee_payroll Add phone bigint;
 Alter table employee_payroll Add Address varchar(200) not null default 'Rewa';
 Alter table employee_Payroll Add Department varchar(200) not null default'HR';
 
+Alter table employee_Payroll Add Deduction bigint, Taxable_pay float, IncomeTax_pay float, Net_Pay float;
+
