@@ -28,3 +28,7 @@ select MIN(Salary) from employee_payroll where gender = 'M' Group by gender
 select MAX(Salary) from employee_payroll where gender = 'M' Group by gender
 select SUM(Salary) from employee_payroll where gender = 'M' Group by gender
 
+Alter table employee_payroll Add phone bigint;
+Alter table employee_payroll Add Address varchar(200) not null default 'Rewa';
+Alter table employee_Payroll Add Department varchar(200) not null default'HR';
+
