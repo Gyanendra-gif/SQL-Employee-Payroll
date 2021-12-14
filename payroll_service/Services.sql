@@ -34,3 +34,11 @@ Alter table employee_Payroll Add Department varchar(200) not null default'HR';
 
 Alter table employee_Payroll Add Deduction bigint, Taxable_pay float, IncomeTax_pay float, Net_Pay float;
 
+create table Department(id int identity (1,1) primary key, DepName varchar(20));
+select * from Department
+
+
+Alter table employee_payroll Add DepId int foreign key references Department(id);
+
+insert into Department values('HR')
+insert into Department values('Sales')
